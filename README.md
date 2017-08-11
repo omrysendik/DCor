@@ -1,12 +1,12 @@
 # Deep Correlations for Texture Synthesis
 
-<img src='Data/Results.png' align="middle" width=1920>
+<img src='Imgs/Results.png' align="middle" width=1920>
 
 <br>
 
 ### [[Code]](https://github.com/omrysendik/DCor/) [[Project page]](https://www.omrysendik.com/texturesynth2017/)   [[Paper]](https://docs.wixstatic.com/ugd/b1fe6d_f4f1684f6ba647ffbf1148c3721fdfc4.pdf)
 
-Matlab implementation for Deep Correlations for Texture Synthesis.
+Matlab implementation for **Deep Correlations for Texture Synthesis**.
 
 This package includes our implementation for **Deep Correlations for Texture Synthesis**.
 We did our best to make it a stande-alone package, meaning that we included ALL of the dependencies into this repository.
