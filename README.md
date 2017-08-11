@@ -32,10 +32,10 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 ```
 - Note that the current code reflects the choice of Hyper-Parameters as described in the paper. If you wish to alter these, tweak GetSynthParams.m
-```
-bash ./pretrained_models/download_model.sh style_cezanne
-```
-- Now, let's generate Paul Cézanne style images:
+
+- Now, patiently wait for the result to converge. If things are working properly, you should get an plot similar to this:
+
+<img src='Data/Output/Texture13_Result.jpg' align="middle" width=384>
 ```
 DATA_ROOT=./datasets/ae_photos name=style_cezanne_pretrained model=one_direction_test phase=test loadSize=256 fineSize=256 resize_or_crop="scale_width" th test.lua
 ```
