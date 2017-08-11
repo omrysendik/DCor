@@ -30,7 +30,7 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 
 - Now, patiently wait for the result to converge. If things are working properly, you should get an plot similar to this:
 
-<img src='Imgs/Output/SynthPlot.png' align="middle" width=384>
+<img src='Imgs/SynthPlot.png' align="middle" width=384>
 
 - The results will be saved to `./Data/Output/`
 
