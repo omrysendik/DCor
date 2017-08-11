@@ -35,7 +35,7 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 - The results will be saved to `./Data/Output/`
 
 ## Dataset
-Download our dataset from this repository too (Data(https://github.com/omrysendik/DCor/tree/master/Data))
+Download our dataset from this repository too ([Data] (https://github.com/omrysendik/DCor/tree/master/Data))
 
 
 ## Citation
