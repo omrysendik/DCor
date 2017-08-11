@@ -13,8 +13,9 @@ trial
 
 Matlab implementation for Deep Correlations for Texture Synthesis.
 
-This package includes CycleGAN, [pix2pix](https://github.com/phillipi/pix2pix), as well as other methods like [BiGAN](https://arxiv.org/abs/1605.09782)/[ALI](https://ishmaelbelghazi.github.io/ALI/) and Apple's paper [S+U learning](https://arxiv.org/pdf/1612.07828.pdf).  
-The code was written by [Jun-Yan Zhu](https://github.com/junyanz) and [Taesung Park](https://github.com/taesung89).  
+This package our implementation for Deep Correlations for Texture Synthesis.
+We did our best to make it a stande-alone package, meaning that we included ALL of the dependencies into this repository.
+The code was written by [Omry Sendik](https://www.omrysendik.com) and [Taesung Park](https://github.com/taesung89).  
 See also our ongoing [[PyTorch]](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) implementation for CycleGAN and pix2pix.
 
 ## Applications
