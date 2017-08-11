@@ -27,9 +27,9 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 - Run synth.m while changing the 'First' flag to 1. This will compile everthing required and download the PreTrained CNN for you.
 
 ### Running
-- Download the test photos (taken by [Alexei Efros](https://www.flickr.com/photos/aaefros)):
+- Change the filename of the desired texture in line 20 of Synth.m
 ```
-bash ./datasets/download_dataset.sh ae_photos
+origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 ```
 - Download the pre-trained model `style_cezanne` (For CPU model, use `style_cezanne_cpu`):
 ```
