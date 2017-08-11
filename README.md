@@ -35,7 +35,8 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 - The results will be saved to `./Data/Output/`
 
 ## Dataset
-Download our dataset from 
+Download our dataset from this repository too ([[Paper]](https://github.com/omrysendik/DCor/tree/master/Data))
+
 
 ## Citation
 If you use this code for your research, please cite our [paper](https://junyanz.github.io/CycleGAN/):
