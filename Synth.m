@@ -9,7 +9,9 @@ clear all;
 close all;
 
 %%
-if(0) %% Change this flag to 1 if this is the first time you run the code and need to compile it
+FirstTime = 0;
+
+if(FirstTime) %% Change this flag to 1 if this is the first time you run the code and need to compile it
     DCor_compile();
 end
 DCor_addpaths();
