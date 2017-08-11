@@ -9,7 +9,7 @@ trial
 
 <br><br><br>
 
-### [[PyTorch]](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) [[project page]](https://junyanz.github.io/CycleGAN/)   [[paper]](https://arxiv.org/pdf/1703.10593.pdf)
+### [[Code]](https://github.com/omrysendik/DCor/) [[project page]](https://junyanz.github.io/CycleGAN/)   [[paper]](https://arxiv.org/pdf/1703.10593.pdf)
 
 Torch implementation for learning an image-to-image translation (i.e. [pix2pix](https://github.com/phillipi/pix2pix)) **without** input-output pairs, for example:
 
