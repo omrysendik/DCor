@@ -40,96 +40,23 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 - The results will be saved to `./Data/Output/`
 
 ## Dataset
-Download the pre-trained models with the following script. The model will be saved to `./checkpoints/model_name/latest_net_G.t7`.
-```bash
-bash ./pretrained_models/download_model.sh model_name
-```
-- `orange2apple` (orange -> apple) and `apple2orange`: trained on ImageNet categories `apple` and `orange`.
-- `horse2zebra` (horse -> zebra) and `zebra2horse` (zebra -> horse): trained on ImageNet categories `horse` and `zebra`.
-- `style_monet` (landscape photo -> Monet painting style),  `style_vangogh` (landscape photo  -> Van Gogh painting style), `style_ukiyoe` (landscape photo  -> Ukiyo-e painting style), `style_cezanne` (landscape photo  -> Cezanne painting style): trained on paintings and Flickr landscape photos.
-- `monet2photo` (Monet paintings -> real landscape): trained on paintings and Flickr landscape photographs.
-- `cityscapes_photo2label` (street scene -> label) and `cityscapes_label2photo` (label -> street scene): trained on the Cityscapes dataset.
-- `map2sat` (map -> aerial photo) and `sat2map` (aerial photo -> map): trained on Google maps.
-- `iphone2dslr_flower` (iPhone photos of flowers -> DSLR photos of flowers): trained on Flickr photos.
-
-CPU models can be downloaded using:
-```bash
-bash pretrained_models/download_model.sh <name>_cpu
-```
-, where `<name>` can be `horse2zebra`, `style_monet`, etc. You just need to append `_cpu` to the target model.
-
-## Training and Test Details
-To train a model,  
-```bash
-DATA_ROOT=/path/to/data/ name=expt_name th train.lua
-```
-Models are saved to `./checkpoints/expt_name` (can be changed by passing `checkpoint_dir=your_dir` in train.lua).  
-See `opt_train` in `options.lua` for additional training options.
-
-To test the model,
-```bash
-DATA_ROOT=/path/to/data/ name=expt_name phase=test th test.lua
-```
-This will run the model named `expt_name` in both directions on all images in `/path/to/data/testA` and `/path/to/data/testB`.  
-Result images, and a webpage to view them, are saved to `./results/expt_name` (can be changed by passing `results_dir=your_dir` in test.lua).  
-See `opt_test` in `options.lua` for additional test options. Please use `model=one_direction_test` if you only would like to generate outputs of the trained network in only one direction, and specify `which_direction=AtoB` or `which_direction=BtoA` to set the direction.
-
-
-
-
-## Datasets
-Download the datasets using the following script. Some of the datasets are collected by other researchers. Please cite their papers if you use the data.
-```bash
-bash ./datasets/download_dataset.sh dataset_name
-```
-- `facades`: 400 images from the [CMP Facades dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/). [[Citation](datasets/bibtex/facades.tex)]
-- `cityscapes`: 2975 images from the [Cityscapes training set](https://www.cityscapes-dataset.com/). [[Citation](datasets/bibtex/cityscapes.tex)]
-- `maps`: 1096 training images scraped from Google Maps.
-- `horse2zebra`: 939 horse images and 1177 zebra images downloaded from [ImageNet](http://www.image-net.org/) using keywords `wild horse` and `zebra`
-- `apple2orange`: 996 apple images and 1020 orange images downloaded from [ImageNet](http://www.image-net.org/) using keywords `apple` and `navel orange`.
-- `summer2winter_yosemite`: 1273 summer Yosemite images and 854 winter Yosemite images were downloaded using Flickr API. See more details in our paper.
-- `monet2photo`, `vangogh2photo`, `ukiyoe2photo`, `cezanne2photo`: The art images were downloaded from [Wikiart](https://www.wikiart.org/). The real photos are downloaded from Flickr using the combination of the tags *landscape* and *landscapephotography*. The training set size of each class is Monet:1074, Cezanne:584, Van Gogh:401, Ukiyo-e:1433, Photographs:6853.
-- `iphone2dslr_flower`: both classes of images were downlaoded from Flickr. The training set size of each class is iPhone:1813, DSLR:3316. See more details in our paper.
-
-
-## Display UI
-Optionally, for displaying images during training and test, use the [display package](https://github.com/szym/display).
-
-- Install it with: `luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec`
-- Then start the server with: `th -ldisplay.start`
-- Open this URL in your browser: [http://localhost:8000](http://localhost:8000)
-
-By default, the server listens on localhost. Pass `0.0.0.0` to allow external connections on any interface:
-```bash
-th -ldisplay.start 8000 0.0.0.0
-```
-Then open `http://(hostname):(port)/` in your browser to load the remote desktop.
-
-## Setup Training and Test data
-To train CycleGAN model on your own datasets, you need to create a data folder with two subdirectories `trainA` and `trainB` that contain images from domain A and B. You can test your model on your training set by setting ``phase='train'`` in  `test.lua`. You can also create subdirectories `testA` and `testB` if you have test data.
-
-You should **not** expect our method to work on just any random combination of input and output datasets (e.g. `cats<->keyboards`). From our experiments, we find it works better if two datasets share similar visual content. For example, `landscape painting<->landscape photographs` works much better than `portrait painting <-> landscape photographs`. `zebras<->horses` achieves compelling results while `cats<->dogs` completely fails.  See the following section for more discussion.
-
-
-## Failure cases
-<img align="left" style="padding:10px" src="https://junyanz.github.io/CycleGAN/images/failure_putin.jpg" width=320>
-
-Our model does not work well when the test image is rather different from the images on which the model is trained, as is the case in the figure to the left (we trained on horses and zebras without riders, but test here one a horse with a rider).  See additional typical failure cases [here](https://junyanz.github.io/CycleGAN/images/failures.jpg). On translation tasks that involve color and texture changes, like many of those reported above, the method often succeeds. We have also explored tasks that require geometric changes, with little success. For example, on the task of `dog<->cat` transfiguration, the learned translation degenerates to making minimal changes to the input. We also observe a lingering gap between the results achievable with paired training data and those achieved by our unpaired method. In some cases, this gap may be very hard -- or even impossible,-- to close: for example, our method sometimes permutes the labels for tree and building in the output of the cityscapes photos->labels task.
-
-
+Download our dataset from 
 
 ## Citation
 If you use this code for your research, please cite our [paper](https://junyanz.github.io/CycleGAN/):
 
 ```
-@article{CycleGAN2017,
-  title={Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks},
-  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
-  journal={arXiv preprint arXiv:1703.10593},
-  year={2017}
+@article{sendik2017deep,
+  title={Deep correlations for texture synthesis},
+  author={Sendik, Omry and Cohen-Or, Daniel},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={36},
+  number={5},
+  pages={161},
+  year={2017},
+  publisher={ACM}
 }
 ```
-
 
 ## Related Projects:
 [pix2pix](https://github.com/phillipi/pix2pix): Image-to-image translation using conditional adversarial nets  
