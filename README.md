@@ -18,7 +18,7 @@ We did our best to make it a stande-alone package, meaning that we included ALL 
 The code was written by [Omry Sendik](https://www.omrysendik.com).
 
 ## Prerequisites
-- Linux or OSX
+- Linux
 - NVIDIA GPU + CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
 - For MAC users, you need the Linux/GNU commands `gfind` and `gwc`, which can be installed with `brew install findutils coreutils`.
 
