@@ -19,12 +19,11 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 
 ## Prerequisites
 - Linux
-- NVIDIA GPU + CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
-- For MAC users, you need the Linux/GNU commands `gfind` and `gwc`, which can be installed with `brew install findutils coreutils`.
+- Matlab R2015b
 
 ## Getting Started
 ### Installation
-- Install torch and dependencies from https://github.com/torch/distro
+- Download this repository
 - Install torch packages `nngraph`, `class`, `display`
 ```bash
 luarocks install nngraph
