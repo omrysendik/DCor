@@ -27,11 +27,11 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 - Run synth.m while changing the 'First' flag to 1. This will compile everthing required and download the PreTrained CNN for you.
 
 ### Running
-- Change the filename of the desired texture in line 20 of Synth.m
+- Change the filename of the desired texture in line 20 of Synth.m. For example:
 ```
 origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 ```
-- Download the pre-trained model `style_cezanne` (For CPU model, use `style_cezanne_cpu`):
+- Note that the current code reflects the choice of Hyper-Parameters as described in the paper. If you wish to alter these, tweak GetSynthParams.m
 ```
 bash ./pretrained_models/download_model.sh style_cezanne
 ```
