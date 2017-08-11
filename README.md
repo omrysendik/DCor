@@ -23,20 +23,10 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 
 ## Getting Started
 ### Installation
-- Download this repository
-- Install torch packages `nngraph`, `class`, `display`
-```bash
-luarocks install nngraph
-luarocks install class
-luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec
-```
-- Clone this repo:
-```bash
-git clone https://github.com/junyanz/CycleGAN
-cd CycleGAN
-```
+- Clone this repository
+- Run synth.m while changing the 'First' flag to 1. This will compile everthing required and download the PreTrained CNN for you.
 
-### Apply a Pre-trained Model
+### Running
 - Download the test photos (taken by [Alexei Efros](https://www.flickr.com/photos/aaefros)):
 ```
 bash ./datasets/download_dataset.sh ae_photos
