@@ -8,7 +8,7 @@
 
 Matlab implementation for Deep Correlations for Texture Synthesis.
 
-This package includes our implementation for Deep Correlations for Texture Synthesis.
+This package includes our implementation for **Deep Correlations for Texture Synthesis**.
 We did our best to make it a stande-alone package, meaning that we included ALL of the dependencies into this repository.
 The code was written by [Omry Sendik](https://www.omrysendik.com).
 
