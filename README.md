@@ -28,7 +28,7 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 ```
 - Note that the current code reflects the choice of Hyper-Parameters as described in the paper. If you wish to alter these, tweak GetSynthParams.m
 
-- Now, patiently wait for the result to converge. If things are working properly, you should get an plot similar to this:
+- Now, patiently wait for the result to converge. If things are working properly, you should get a plot similar to this:
 
 <img src='Imgs/SynthPlot.png' align="middle" width=384>
 
