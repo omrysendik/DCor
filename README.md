@@ -39,7 +39,7 @@ Download our dataset from this repository too [[data]](https://github.com/omryse
 
 
 ## Citation
-If you use this code for your research, please cite our [paper](https://junyanz.github.io/CycleGAN/):
+If you use this code for your research, please cite our [paper](https://docs.wixstatic.com/ugd/b1fe6d_f4f1684f6ba647ffbf1148c3721fdfc4.pdf):
 
 ```
 @article{sendik2017deep,
