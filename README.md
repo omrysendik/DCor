@@ -37,38 +37,9 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 
 <img src='Data/Output/Texture13_Result.jpg' align="middle" width=384>
 
-- The results will be written to ./Data/Output/
-The test results will be saved to `./results/style_cezanne_pretrained/latest_test/index.html`.  
-Please refer to [Model Zoo](#Pre-trained-models) for more pre-trained models.
-`./examples/test_vangogh_style_on_ae_photos.sh` is an example script that downloads the pretrained Van Gogh style network and runs it on Efros's photos.
+- The results will be saved to `./Data/Output/`
 
-### Train
-- Download a dataset (e.g. zebra and horse images from ImageNet):
-```bash
-bash ./datasets/download_dataset.sh horse2zebra
-```
-- Train a model:
-```bash
-DATA_ROOT=./datasets/horse2zebra name=horse2zebra_model th train.lua
-```
-- (CPU only) The same training command without using a GPU or CUDNN. Setting the environment variables ```gpu=0 cudnn=0``` forces CPU only
-```bash
-DATA_ROOT=./datasets/horse2zebra name=horse2zebra_model gpu=0 cudnn=0 th train.lua
-```
-- (Optionally) start the display server to view results as the model trains. (See [Display UI](#display-ui) for more details):
-```bash
-th -ldisplay.start 8000 0.0.0.0
-```
-
-### Test
-- Finally, test the model:
-```bash
-DATA_ROOT=./datasets/horse2zebra name=horse2zebra_model phase=test th test.lua
-```
-The test results will be saved to a html file here: `./results/horse2zebra_model/latest_test/index.html`.
-
-
-## Model Zoo
+## Dataset
 Download the pre-trained models with the following script. The model will be saved to `./checkpoints/model_name/latest_net_G.t7`.
 ```bash
 bash ./pretrained_models/download_model.sh model_name
