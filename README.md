@@ -13,8 +13,6 @@ trial
 
 Matlab implementation for Deep Correlations for Texture Synthesis, for example:
 
-
-
 <img src="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg" width="1000px"/>
 
 [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://junyanz.github.io/CycleGAN/)  
