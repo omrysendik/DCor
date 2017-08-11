@@ -36,9 +36,8 @@ origSrcImg = imread(strrep('.\Data\Texture13.png','\',filesep));
 - Now, patiently wait for the result to converge. If things are working properly, you should get an plot similar to this:
 
 <img src='Data/Output/Texture13_Result.jpg' align="middle" width=384>
-```
-DATA_ROOT=./datasets/ae_photos name=style_cezanne_pretrained model=one_direction_test phase=test loadSize=256 fineSize=256 resize_or_crop="scale_width" th test.lua
-```
+
+- The results will be written to ./Data/Output/
 The test results will be saved to `./results/style_cezanne_pretrained/latest_test/index.html`.  
 Please refer to [Model Zoo](#Pre-trained-models) for more pre-trained models.
 `./examples/test_vangogh_style_on_ae_photos.sh` is an example script that downloads the pretrained Van Gogh style network and runs it on Efros's photos.
