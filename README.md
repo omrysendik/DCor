@@ -2,7 +2,7 @@
 
 <img src='Data/Results.png' align="middle" width=1920>
 
-<br><br><br>
+<br>
 
 ### [[Code]](https://github.com/omrysendik/DCor/) [[Project page]](https://www.omrysendik.com/texturesynth2017/)   [[Paper]](https://docs.wixstatic.com/ugd/b1fe6d_f4f1684f6ba647ffbf1148c3721fdfc4.pdf)
 
