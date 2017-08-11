@@ -11,7 +11,7 @@ trial
 
 ### [[Code]](https://github.com/omrysendik/DCor/) [[Project page]](https://www.omrysendik.com/texturesynth2017/)   [[Paper]](https://docs.wixstatic.com/ugd/b1fe6d_f4f1684f6ba647ffbf1148c3721fdfc4.pdf)
 
-Torch implementation for learning an image-to-image translation (i.e. [pix2pix](https://github.com/phillipi/pix2pix)) **without** input-output pairs, for example:
+Matlab implementation for Deep Correlations for Texture Synthesis, for example:
 
 
 
