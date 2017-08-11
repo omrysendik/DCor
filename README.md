@@ -1,4 +1,4 @@
-# DCor
-Deep Correlations for Texture Synthesis
+# Deep Correlations for Texture Synthesis
+
 
 trial
