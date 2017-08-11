@@ -5,7 +5,7 @@ trial
 
 
 
-<img src='Data/Results.png' align="middle" width=384>
+<img src='Data/Results.png' align="middle" width=1920>
 
 <br><br><br>
 
