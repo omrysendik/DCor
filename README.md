@@ -60,11 +60,7 @@ If you use this code for your research, please cite our [paper](https://junyanz.
 
 ## Related Projects:
 [MatConvNet](http://www.vlfeat.org/matconvnet/): MatConvNet
-[L-BFGS-B](https://github.com/junyanz/iGAN): Interactive Image Generation via Generative Adversarial Networks
-
-## Cat Paper Collection
-If you love cats, and love reading cool graphics, vision, and learning papers, please check out the Cat Paper Collection:  
-[[Github]](https://github.com/junyanz/CatPapers) [[Webpage]](http://people.eecs.berkeley.edu/~junyanz/cat/cat_papers.html)
+[L-BFGS-B](http://users.eecs.northwestern.edu/~nocedal/lbfgsb.html): L-BFGS-B for Matlab
 
 ## Acknowledgments
 Code borrows from [pix2pix](https://github.com/phillipi/pix2pix) and [DCGAN](https://github.com/soumith/dcgan.torch). The data loader is modified from [DCGAN](https://github.com/soumith/dcgan.torch) and  [Context-Encoder](https://github.com/pathak22/context-encoder). The generative network is adopted from [neural-style](https://github.com/jcjohnson/neural-style) with [Instance Normalization](https://github.com/DmitryUlyanov/texture_nets/blob/master/InstanceNormalization.lua).
