@@ -54,6 +54,6 @@ If you use this code for your research, please cite our [paper](https://junyanz.
 }
 ```
 ## Acknowledgments
-Code relies heavily on:
+Code relies heavily on: <br>
 [MatConvNet](http://www.vlfeat.org/matconvnet/): MatConvNet <br>
 [L-BFGS-B](http://users.eecs.northwestern.edu/~nocedal/lbfgsb.html): L-BFGS-B for Matlab
