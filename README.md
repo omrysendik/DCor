@@ -17,24 +17,6 @@ This package our implementation for Deep Correlations for Texture Synthesis.
 We did our best to make it a stande-alone package, meaning that we included ALL of the dependencies into this repository.
 The code was written by [Omry Sendik](https://www.omrysendik.com).
 
-## Applications
-### Monet Paintings to Photos
-<img src="https://junyanz.github.io/CycleGAN/images/painting2photo.jpg" width="1000px"/>
-
-### Collection Style Transfer
-<img src="https://junyanz.github.io/CycleGAN/images/photo2painting.jpg" width="1000px"/>
-
-### Object Transfiguration
-<img src="https://junyanz.github.io/CycleGAN/images/objects.jpg" width="1000px"/>
-
-### Season Transfer
-<img src="https://junyanz.github.io/CycleGAN/images/season.jpg" width="1000px"/>
-
-### Photo Enhancement: Narrow depth of field
-<img src="https://junyanz.github.io/CycleGAN/images/photo_enhancement.jpg" width="1000px"/>
-
-
-
 ## Prerequisites
 - Linux or OSX
 - NVIDIA GPU + CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
