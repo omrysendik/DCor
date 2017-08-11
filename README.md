@@ -19,7 +19,7 @@ The code was written by [Omry Sendik](https://www.omrysendik.com).
 ## Getting Started
 ### Installation
 - Clone this repository
-- Run synth.m while changing the 'First' flag to 1. This will compile everthing required and download the PreTrained CNN for you. After running for the first time successfuly, you may change 'First' to 0.
+- Run synth.m while changing the 'First' flag to 1. This will compile everthing required and download the PreTrained CNN for you. After running for the first time successfully, you may change 'First' to 0.
 
 ### Running
 - Change the filename of the desired texture in line 20 of Synth.m. For example:
