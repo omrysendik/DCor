@@ -59,7 +59,7 @@ If you use this code for your research, please cite our [paper](https://junyanz.
 ```
 
 ## Related Projects:
-[MatConvNet](http://www.vlfeat.org/matconvnet/): http://www.vlfeat.org/matconvnet/
+[MatConvNet](http://www.vlfeat.org/matconvnet/): MatConvNet
 [L-BFGS-B](https://github.com/junyanz/iGAN): Interactive Image Generation via Generative Adversarial Networks
 
 ## Cat Paper Collection
