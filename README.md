@@ -59,8 +59,8 @@ If you use this code for your research, please cite our [paper](https://junyanz.
 ```
 
 ## Related Projects:
-[pix2pix](https://github.com/phillipi/pix2pix): Image-to-image translation using conditional adversarial nets  
-[iGAN](https://github.com/junyanz/iGAN): Interactive Image Generation via Generative Adversarial Networks
+[MatConvNet](http://www.vlfeat.org/matconvnet/): http://www.vlfeat.org/matconvnet/
+[L-BFGS-B](https://github.com/junyanz/iGAN): Interactive Image Generation via Generative Adversarial Networks
 
 ## Cat Paper Collection
 If you love cats, and love reading cool graphics, vision, and learning papers, please check out the Cat Paper Collection:  
