@@ -13,7 +13,7 @@ We did our best to make it a stande-alone package, meaning that we included ALL 
 The code was written by [Omry Sendik](https://www.omrysendik.com).
 
 ## Prerequisites
-- Linux
+- Linux (Ubuntu 16.04)
 - Matlab R2015b
 
 ## Getting Started
