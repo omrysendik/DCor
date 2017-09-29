@@ -15,7 +15,7 @@ for k=1:length(params.unitedLayerInds)
     end
     
     auxInd = find(params.unitedLayerInds(k)==params.DiversityMatchLayerInds,1);
-    if(~isempty(auxInd))
+    if(~isempty(auxInd) && params.DiversityLossWeight ~= 0)
         grads{k} = grads{k}+params.DiversityLossWeight*single(DiversityGrads{auxInd});
     end
 
